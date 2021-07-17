@@ -6,7 +6,7 @@
 import { Uri } from 'vscode';
 
 export function parseUri(uri: string): Uri {
-    return Uri.parse(uri, true);
+    return Uri.parse(uri);
 }
 
 export function stringifyUri(uri: Uri): string {
