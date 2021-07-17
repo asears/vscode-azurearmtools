@@ -3,7 +3,6 @@
 // ----------------------------------------------------------------------------
 
 import * as path from 'path';
-import { isNullOrUndefined } from 'util';
 import { ConfigurationTarget, Uri } from 'vscode';
 import { configKeys } from '../../constants';
 import { normalizeFilePath } from '../../util/normalizedPaths';
@@ -48,7 +47,7 @@ export class DeploymentFileMapping {
         if (typeof paramFiles === 'object') {
             for (let templatePath of Object.getOwnPropertyNames(paramFiles)) {
                 let paramPathObject = paramFiles[templatePath];
-                if (typeof paramPathObject !== 'string' || isNullOrUndefined(paramPathObject)) {
+                if (typeof paramPathObject !== 'string' || paramPathObject == null || paramPathObject === undefined) {
                     continue;
                 }
                 const paramPath: string = <string>paramPathObject;
