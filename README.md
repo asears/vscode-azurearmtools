@@ -370,7 +370,7 @@ There are several ways you can contribute to our [repo](https://github.com/Micro
   - See [our snippets file for ARM templates](https://github.com/microsoft/vscode-azurearmtools/blob/main/assets/armsnippets.jsonc)
 - **Code**: Contribute bug fixes, features or design changes:
   - Clone the repository locally and open in VS Code.
-  - Install [TSLint for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=eg2.tslint).
+  - Install [ESLint for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
   - Open the terminal (press `CTRL+`\`) and run `npm install`.
   - To build, press `F1` and type in `Tasks: Run Build Task`.
   - Debug: press `F5` to start debugging the extension.
