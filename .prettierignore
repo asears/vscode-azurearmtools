@@ -1,0 +1,24 @@
+# Ignore artifacts:
+build
+coverage
+.vscode-test
+dist
+out
+
+# These might be eventually formatted by prettier
+.azure-pipelines
+.github
+.vscode
+assets
+CHANGELOG.md
+extension.bundle.ts
+grammars
+gulpfile.ts
+LICENSE.md
+main.js
+NOTICE.html
+package-lock.json
+package.json
+README.dev.md
+README.md
+src
