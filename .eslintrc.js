@@ -1,4 +1,6 @@
 module.exports = {
+  root: true,
+
   env: {
     browser: true,
     es2021: true,
@@ -12,6 +14,14 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "@typescript-eslint/tslint"],
   rules: {
+    "linebreak-style": "off",
+    quotes: "off",
     "@typescript-eslint/quotes": ["off", "single"],
+    "max-len": [
+      "off",
+      {
+        code: 140,
+      },
+    ],
   },
 };
